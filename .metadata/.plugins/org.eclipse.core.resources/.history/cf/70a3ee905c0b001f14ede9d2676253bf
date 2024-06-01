@@ -1,0 +1,85 @@
+package ScreenShot;
+
+import org.openqa.selenium.io.FileHandler;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.Alert;
+
+public class ScreenShotExample {
+
+	public static void main(String[] args) throws Exception {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Learning\\Selenium\\ChromeDriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://demo.guru99.com/test/delete_customer.php");
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
+		Thread.sleep(3000);
+
+		// How to get unique file name
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date now = new Date();
+
+		System.out.println("Date and Time is : " + now);
+
+		// Way 1 - Full screenshot
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest = new File(System.getProperty("user.dir") + "/target/" + "Screenshot1.jpeg");
+		FileHandler.copy(screenshot, dest);
+		
+		Thread.sleep(2000);
+		driver.findElement(By.name("cusid")).sendKeys("53920");
+		SimpleDateFormat formatter2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date now2 = new Date();
+		String temp2 = now.toString();
+		File screenshot2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest2 = new File(System.getProperty("user.dir") + "/target/" + "Screenshot2.jpeg");
+		FileHandler.copy(screenshot2, dest2);
+		Thread.sleep(4000);
+
+		SimpleDateFormat formatter3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date now3 = new Date();
+		String temp3 = now.toString();
+		File screenshot3 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest3 = new File(System.getProperty("user.dir") + "/target/" + "Screenshot3.jpeg");
+		FileHandler.copy(screenshot3, dest3);
+		driver.findElement(By.name("submit")).submit();
+		Thread.sleep(4000);
+		Alert alert = driver.switchTo().alert();
+		String alertMessage = driver.switchTo().alert().getText();
+		SimpleDateFormat formatter4 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date now4 = new Date();
+		String temp4 = now.toString();
+		File screenshot4 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest4 = new File(System.getProperty("user.dir") + "/target/" + "Screenshot4.jpeg");
+		FileHandler.copy(screenshot4, dest4);
+
+		// Way2 - Partial Screenshot
+//		WebElement element = driver.findElement(By.xpath(""))
+//		  File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//	         Point p = element.getLocation();
+//	         int width = element.getSize().getWidth();
+//	         int height = element.getSize().getHeight();
+//	         BufferedImage img = ImageIO.read(screen);
+//	         BufferedImage dest = img.getSubimage(p.getX(), p.getY(), width,   
+//	                                  height);
+//	         ImageIO.write(dest, "png", screen);
+//	         File f = new File("S:\\ome\\where\\over\\the\\rainbow");
+//	         FileUtils.copyFile(screen, f);
+
+		// Way 3 - Full screenshot with scroll
+
+	}
+}
+	
+
+

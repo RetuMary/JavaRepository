@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;stringMethod&apos; to &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original project: &apos;stringMethod&apos;&#x0D;&#x0A;- Destination element: &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original element: &apos;stringMethod/src/stringMethod&apos;" description="Copy package" destination="=Extrajavapassfail/src" element1="/src&lt;stringMethod" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1717250894801" version="1.0"/>
+</session>

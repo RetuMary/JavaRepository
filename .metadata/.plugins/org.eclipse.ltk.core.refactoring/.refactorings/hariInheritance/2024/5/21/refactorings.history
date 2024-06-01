@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original project: &apos;hariInheritance&apos;&#x0D;&#x0A;- Destination element: &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hariInheritance/src/arraylistExample&#x0D;&#x0A;     hariInheritance/src/polymorphism&#x0D;&#x0A;     hariInheritance/src/hariInheritance&#x0D;&#x0A;     hariInheritance/src/throwsAndthrow" description="Copy packages" destination="=Extrajavapassfail/src" element1="/src&lt;arraylistExample" element2="/src&lt;polymorphism" element3="/src&lt;hariInheritance" element4="/src&lt;throwsAndthrow" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1716640555187" version="1.0"/>
+</session>

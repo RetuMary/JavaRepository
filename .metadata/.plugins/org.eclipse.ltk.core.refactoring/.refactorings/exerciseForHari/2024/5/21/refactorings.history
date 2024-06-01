@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original project: &apos;exerciseForHari&apos;&#x0D;&#x0A;- Destination element: &apos;Extrajavapassfail/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     exerciseForHari/src/DateTimeDemo&#x0D;&#x0A;     exerciseForHari/src/localandinstancevariable&#x0D;&#x0A;     exerciseForHari/src/exerciseForHari&#x0D;&#x0A;     exerciseForHari/src/ObjectExercise" description="Copy packages" destination="=Extrajavapassfail/src" element1="/src&lt;DateTimeDemo" element2="/src&lt;localandinstancevariable" element3="/src&lt;exerciseForHari" element4="/src&lt;ObjectExercise" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1716640416101" version="1.0"/>
+</session>

@@ -1,0 +1,34 @@
+package mavenExample;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FristTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","C:\\IT Learning subject\\chromedriver.exe");
+				
+		
+		// Initialize ChromeDriver
+		 WebDriver driver = new ChromeDriver();
+		 
+		 // Navigate to a website
+		 driver.get("https://www.amazon.com/gp/css/homepage.html?ref_=nav_youraccount_btn");
+		 
+		 // Get and print the title of the webpage
+		 String pageTitle = driver.getTitle();
+		 System.out.println("Page Title: " + pageTitle);
+		 
+		 // Close the browser
+		// driver.quit();
+
+	
+	
+	
+	
+	
+	}
+
+}
