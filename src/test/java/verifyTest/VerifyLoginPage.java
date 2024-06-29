@@ -17,7 +17,7 @@ public class VerifyLoginPage {
 		driver.get("https://www.facebook.com/");
 	
 		FaceBookLoginPage page=new FaceBookLoginPage(driver);
-		page.loginpage("retumary@yahoo.com","321654ritu");
+		page.loginpage("Retumary@yahoo.com","321654ritu");
 		driver.quit();
 				
 	
